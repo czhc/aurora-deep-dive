@@ -21,21 +21,21 @@ The environment deployed using CloudFormation includes several components, as li
 
 1. Login to your AWS Isengard console and ensure you select **Ohio (US-EAST-2)**region before you start.
 2. Enter the **Username** and **Password** from the credentials card, click **Sign In**.
-![image1](./img/image001.png)
+[image1](./img/image001.png)
 
 1. Ensure the **Ohio (us-east-2)** region is selected in the top right corner, if not use that dropdown to choose the correct region
 
-![image2](./img/image002.png)
+[image2](./img/image002.png)
 
 1. Open the **Key Pairs** section of the EC2 service console.
 2. Ensure you are still in the correct region, and click **Create Key Pair**.
 
 
-![image3](./img/image003.png)
+[image3](./img/image003.png)
 
 1. Name the key pair `dblabkeys` and then click **Create** and download the file named **dblabkeys.pem** to your computer, save it in a memorable location like your desktop.  You will need this file later in the lab.
 
-![image4](./img/image004.png)
+[image4](./img/image004.png)
 
 ## Task 1.2 - Creating a Stack using CloudFormation
 
@@ -43,11 +43,11 @@ The environment deployed using CloudFormation includes several components, as li
 2. Open the **CloudFormation** service console and *Create Stack* 
 
 
-![image5](./img/image005.png)
+[image5](./img/image005.png)
 
 1. Select the radio button named **Upload a template** , then **Choose file** and select the template file you downloaded previously named [lab\_template.yml](./lab_template.yml) and then click **Next**.
 
-![image6](./img/image006.png)
+[image6](./img/image006.png)
 
 1. In the field named **Stack Name** , enter the value `dblabstack`, select the **ec2KeyPair** value as `dblabkeys` (the key pair you have created previously).
 
@@ -56,27 +56,27 @@ Select all 3 AZs available in the drop down available for the **vpcAZs** field
 and then click **Next**.
 
 
-![image7](./img/image007.png)
+[image7](./img/image007.png)
 
 1. On the **Configure stack options** page, leave the defaults as they are, scroll to the bottom and click **Next**.
 
 
-![image8](./img/image008.png)
+[image8](./img/image008.png)
 
 1. On the **Review dblabstack** page, scroll to the bottom, check the box that reads: **I acknowledge that AWS CloudFormation might create IAM resources with custom names** and then click **Create**.
 
-![image9](./img/image009.png)
+[image9](./img/image009.png)
 
 1. The stack will take approximatively 20 minutes to provision, you can monitor the status on the **Stack detail** page. You can monitor the progress of the stack creation process by refreshing the **Events** tab. The latest event in the list will indicate **CREATE\_COMPLETE** for the **dblabstack** resource.
 
 In the meantime we will discuss some important considerations when architecting and automating the deployment of Aurora clusters.
 
-![image10](./img/image010.png)
+[image10](./img/image010.png)
 
 
 1. Once the status of the stack is _CREATE COMPLETE_ , click on the **Outputs** tab. The values here will be critical to the completion of the remainder of the lab.   **Please take a moment to save these values somewhere that you will have easy access to them during the remainder of the lab.** The names that appear in the **Key** column are referenced directly in the instructions in subsequent steps, using the parameter format: **[outputKey]**
 
-![image11](./img/image011.png)
+[image11](./img/image011.png)
 
 
 ## Task 1.3 - Connecting to the workstation EC2 instance
@@ -104,7 +104,7 @@ Ignore the region listed in the screen shot below. The correct region to chose i
 
 `us-east-2`
 
-![image12](./img/image012.png)
+[image12](./img/image012.png)
 
 1. Connect to the Aurora database using the following command:
 
