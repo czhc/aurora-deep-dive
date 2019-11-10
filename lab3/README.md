@@ -16,6 +16,8 @@ The –restore-type copy-on-write is how the restore-db-cluster method is used t
 
 **aws rds describe-db-clusters --db-cluster-identifier** **[clusterName]****-clone**
 
+[image16](./img/image016.png)
+
 1. Take note of both the **&quot;Status&quot;** and the **&quot;Endpoint.&quot;**  Once the **Status** becomes **available** , you can add an instance to the cluster and once the instance is added, you will want to connect to the cluster via the **Endpoint** value.  To add an instance to the cluster once the status becomes **available** , enter the following:
 
 **aws rds create-db-instance --db-instance-class db.r4.large --engine aurora --db-cluster-identifier** **[clusterName]****-clone --db-instance-identifier **** [clusterName] ****-clone-instance**
@@ -25,6 +27,9 @@ The –restore-type copy-on-write is how the restore-db-cluster method is used t
 **aws rds describe-db-instances --db-instance-identifier** **[clusterName]****-clone-instance**
 
 1. Once the **DBInstanceStatus** changes from **creating** to **available** , you have a functioning clone. Creating a node in a cluster also takes several minutes.
+
+[image17](./img/image017.png)
+
 
 1. Once your instance is created, connect to the instance using the following command:
 
@@ -37,6 +42,9 @@ The –restore-type copy-on-write is how the restore-db-cluster method is used t
 **checksum table sbtest1;**
 
 1. The output of your commands should look similar to the example below:
+
+[image18](./img/image018.png)
+
 
 1. Please take note of the value for your specific clone cluster.
 
@@ -52,7 +60,7 @@ The –restore-type copy-on-write is how the restore-db-cluster method is used t
 
 1. Please take note of the value for your specific source cluster. The checksum should be identical.
 
-
+[image18](./img/image018.png)
 
 ## Task 3.2 - Backtracking the Database
 
