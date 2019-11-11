@@ -68,39 +68,35 @@ You can do this using the Query Editor on the console or any mysql client . Note
 1. Remove ` and comment and Copy paste the below contents on the &quot;Editor&quot; Section of the next screen.
 
     ```
-    DROP DATABASE IF EXISTS employees;
+        DROP DATABASE IF EXISTS employees;
+        CREATE DATABASE IF NOT EXISTS employees;
+        USE employees;
 
-    CREATE DATABASE IF NOT EXISTS employees;
+        SELECT 'CREATING DATABASE STRUCTURE' as 'INFO';
 
-    USE employees;
+        DROP TABLE IF EXISTS employees;
 
-    SELECT 'CREATING DATABASE STRUCTURE' as 'INFO';
+        /*!50503 set default_storage_engine = InnoDB */;
+        /*!50503 select CONCAT('storage engine: ', @@default_storage_engine) as INFO */;
 
-    DROP TABLE IF EXISTS employees;
+        CREATE TABLE employees (
+            emp_no      INT             NOT NULL,
+            birth_date  DATE            NOT NULL,
+            first_name  VARCHAR(14)     NOT NULL,
+            last_name   VARCHAR(16)     NOT NULL,
+            gender      ENUM ('M','F')  NOT NULL,
+            hire_date   DATE            NOT NULL,
+            PRIMARY KEY (emp_no)
+        );
+        SELECT 'LOADING employees' as 'INFO';
+        INSERT INTO `employees` VALUES (10001,'1953-09-02','Georgi','Facello','M','1986-06-26'),
+        (10002,'1964-06-02','Bezalel','Simmel','F','1985-11-21'),
+        (10003,'1959-12-03','Parto','Bamford','M','1986-08-28'),
+        (10004,'1954-05-01','Chirstian','Koblick','M','1986-12-01'),
+        (10005,'1955-01-21','Kyoichi','Maliniak','M','1989-09-12'),
+        (10006,'1953-04-20','Anneke','Preusig','F','1989-06-02'),
+        (10007,'1957-05-23','Tzvetan','Zielinski','F','1989-02-10');
 
-    /\*!50503 set default\_storage\_engine = InnoDB \*/;
-
-    /\*!50503 select CONCAT(&#39;storage engine: &#39;, @@default\_storage\_engine) as INFO \*/;
-
-    CREATE TABLE employees (
-        emp_no  INT  NOT NULL,
-        birth_date  DATE  NOT NULL,
-        first_name  VARCHAR(14)  NOT NULL,
-        last_name  VARCHAR(16)  NOT NULL,
-        gender  ENUM ('M','F')  NOT NULL,
-        hire_date  DATE  NOT NULL,
-        PRIMARY KEY (emp_no)
-    );
-
-    SELECT 'LOADING employees' as 'INFO';
-
-    INSERT INTO `employees` VALUES (10001,'1953-09-02','Georgi','Facello','M','1986-06-26'),
-    (10002,'1964-06-02','Bezalel','Simmel','F','1985-11-21'),
-    (10003,'1959-12-03','Parto','Bamford','M','1986-08-28'),
-    (10004,'1954-05-01','Chirstian','Koblick','M','1986-12-01'),
-    (10005,'1955-01-21','Kyoichi','Maliniak','M','1989-09-12'),
-    (10006,'1953-04-20','Anneke','Preusig','F','1989-06-02'),
-    (10007,'1957-05-23','Tzvetan','Zielinski','F','1989-02-10');
 
     ```
 
