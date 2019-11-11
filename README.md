@@ -1,5 +1,5 @@
 # Amazon Aurora Deep Dive 
-Credits to AWS Datases team
+Forked from AWS Databases team
 
 ### Learning outcomes from this workshop?
 
