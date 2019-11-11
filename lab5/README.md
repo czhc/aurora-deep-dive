@@ -13,7 +13,7 @@ You will need to have public subnet id from the previous cloudformation template
 [https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2 - /stacks/create/template?stackName=AWS-Cloud9-IDE&amp;templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-cloud9-ide/templates/cloud9-ide-instance.yaml](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=AWS-Cloud9-IDE&amp;templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-cloud9-ide/templates/cloud9-ide-instance.yaml)
 
 
-1. Go to the RDS Console click on the &quot;Create Database&quot; orange icon.
+1. Go to the RDS Console and click on the &quot;Create Database&quot; orange icon.
 
     ![image21](./img/image021.png)
 
@@ -40,35 +40,29 @@ You will need to have public subnet id from the previous cloudformation template
     ![image26](./img/image026.png)
 
 
-7.On the next screen in the &quot;Network and Security&quot;  section select the checkbox for &quot;Data API&quot; to enable it
+7. On the next screen in the &quot;Network and Security&quot;  section select the checkbox for &quot;Data API&quot; to enable it
 
     ![image27](./img/image027.png)
 
 
-1. Select &quot;Apply Immediately&quot; and click on &quot;Modify Cluster&quot; on the next screen.
+1. Select "Apply Immediately" and click on "Modify Cluster" on the next screen.
 
     ![image28](./img/image028.png)
 
 1. Next, we need to create a database and a table in the serverless database.
-
 You can do this using the Query Editor on the console or any mysql client . Note the Query editor is currently only available for Aurora Serverless MYSQL.
 
-Navigate to the RDS Console and click on the Query Editor option on the left pane.
-
-On the following screen please select the following for the fields.
+    Navigate to the RDS Console and click on the Query Editor option on the left pane.
+    On the following screen please select the following for the fields.
 
 1. Select the database name from the dropdown ( in this case serverless)
 2. Skip the next Field below Database username (i.e Add new database credentials). This is used in the event you want to create new users for the DB.
 
 1. Enter `masterusername` in the "Enter Database username" field.
 2. Enter the password provided at the time of  db creation. Skip the next field
-
-("Enter the name of the database or schema") as you want to create a
-
-new DB and ciick on "Connect to database".
+    ("Enter the name of the database or schema") as you want to create a new DB and ciick on "Connect to database".
 
     ![image29](./img/image029.png)
-
 
 
 1. Remove ` and comment and Copy paste the below contents on the &quot;Editor&quot; Section of the next screen.
