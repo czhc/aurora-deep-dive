@@ -3,6 +3,10 @@ Credits to AWS Datases team
 
 ### Learning outcomes from this workshop?
 
+* Review underlying architecutre of Amazon Aurora databases
+* Test Aurora features in autoscaling and data recovery 
+* Explore performance monitoring with Performance Insights 
+* Integrate AWS Lambda with Aurora Serverless for a serverless application architecture
 
 # Pre-requisites:  
 * You need to have access to an AWS account with **AdminstratorAccess**
@@ -29,6 +33,8 @@ Make sure you bring down / delete all resources created as part of this lab
 
 ## Resources to delete
 
-* Aurora Cluster 
+* Aurora DB Clusters
+* Cloud9 environments
+* Lambda functions
 
 
