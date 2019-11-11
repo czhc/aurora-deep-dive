@@ -132,8 +132,8 @@ The environment deployed using **CloudFormation** includes several components, a
       LOAD DATA FROM S3 MANIFEST
       's3-us-west-2://auroraworkshopassets/data/sbtable/sample.manifest'
       REPLACE INTO TABLE sbtest1
-      CHARACTER SET 'latin1';
-      FIELDS TERMINATED BY ',';
+      CHARACTER SET 'latin1'
+      FIELDS TERMINATED BY ','
       LINES TERMINATED BY '\r\n';
 
     ```
