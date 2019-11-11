@@ -120,10 +120,10 @@ DROP TABLE IF EXISTS `sbtest1`;
 
 ```
 CREATE TABLE `sbtest1` (
- `id` int(10) unsigned NOT NULL AUTO\_INCREMENT,
- `k` int(10) unsigned NOT NULL DEFAULT &#39;0&#39;,
- `c` char(120) NOT NULL DEFAULT &#39;&#39;,
- `pad` char(60) NOT NULL DEFAULT &#39;&#39;,
+ `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+ `k` int(10) unsigned NOT NULL DEFAULT '0',
+ `c` char(120) NOT NULL DEFAULT '',
+ `pad` char(60) NOT NULL DEFAULT '',
 PRIMARY KEY (`id`),
 KEY `k_1` (`k`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -131,7 +131,7 @@ KEY `k_1` (`k`)
 
 ```
 LOAD DATA FROM S3 MANIFEST
-"s3-us-west-2://auroraworkshopassets/data/sbtable/sample.manifest"
+'s3-us-west-2://auroraworkshopassets/data/sbtable/sample.manifest'
 REPLACE INTO TABLE sbtest1
 CHARACTER SET 'latin1';
 FIELDS TERMINATED BY ',';
