@@ -14,11 +14,11 @@
 
 1. Navigate to the RDS service console and click on **Performance Insights** in the left side navigation bar.
 
-![image19](./img/image019.png)
+    ![image19](./img/image019.png)
 
 
 1. Examine the performance of your DB instance **demostack-node-01** using Performance Insights. What conclusions can you reach?
 
-![image20](./img/image020.png)
+    ![image20](./img/image020.png)
 
 
