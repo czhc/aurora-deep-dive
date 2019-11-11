@@ -7,7 +7,7 @@ In this part we will explore the cluster endpoints and how auto scaling of read 
 1. On the bastion host, execute the following statement:
 
 ```
-python loadtest.py[readerEndpoint]
+python loadtest.py [readerEndpoint]
 ```
 
 1. Open the **Amazon RDS** service console
