@@ -25,7 +25,7 @@
 1. Take note of both the **Status** and the **Endpoint**  Once the **Status** becomes **available** , you can add an instance to the cluster and once the instance is added, you will want to connect to the cluster via the **Endpoint** value.  To add an instance to the cluster once the status becomes **available** , enter the following:
 
     ```
-    aws rds create-db-instance --db-instance-class db.r4.large --engine aurora --db-cluster-identifier [clusterName]-clone --db-instance-identifier [clusterName] -clone-instance
+    aws rds create-db-instance --db-instance-class db.r4.large --engine aurora --db-cluster-identifier [clusterName]-clone --db-instance-identifier [clusterName]-clone-instance
     ```
 
 1. To check the creation of the instance, enter the following at the command line:
