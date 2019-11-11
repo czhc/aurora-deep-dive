@@ -106,8 +106,7 @@ INSERT INTO `employees` VALUES (10001,'1953-09-02','Georgi','Facello','M','1986-
 
 
 1. The output tab below the editor will auto refresh as each SQL is executed.
-
-At the end of the last statement you should see the below SQL. Ensure status is reported as SUCCESS for all statements.
+    At the end of the last statement you should see the below SQL. Ensure status is reported as SUCCESS for all statements.
 
     ![image30](./img/image030.png)
 
