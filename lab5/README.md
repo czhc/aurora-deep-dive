@@ -189,7 +189,7 @@ You can do this using the Query Editor on the console or any mysql client . Note
     ![image45](./img/image045.png)
 
 
-1. Change the directory to the "serverlessDB" and run the command: `pip install -r requirements.txt –target .`
+1. Change the directory to the "serverlessDB" and run the command: `pip install -r requirements.txt -target`.
 
     ![image46](./img/image046.png)
 
