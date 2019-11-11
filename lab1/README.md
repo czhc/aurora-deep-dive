@@ -102,7 +102,7 @@ The environment deployed using **CloudFormation** includes several components, a
       aws configure
     ```
 
-    Then select the defaults for everything except the default region name.  For the default region name, enter `us-east-2`;.
+    Then select the defaults for everything except the default region name.  For the default region name, enter `us-east-2`.
     Ignore the region listed in the screen shot below. The correct region to chose is `us-east-2`
 
     ![image12](./img/image012.png)
