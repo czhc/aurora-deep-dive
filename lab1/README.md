@@ -113,7 +113,7 @@ The environment deployed using **CloudFormation** includes several components, a
       mysql -h [clusterEndpoint] -u masteruser -p mylab
     ```
     
-    Unless otherwise specified the cluster master username is **masteruser** and the password is **Password1**
+    **NOTE:** Unless otherwise specified the cluster master username is **masteruser** and the password is **Password1**
 
 1. Run the following queries on the database server, they will create a table, and load data from S3 into it:
 
