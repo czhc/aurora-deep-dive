@@ -7,10 +7,7 @@
 1. On the bastion host, enter:
 
     ```
-      aws rds restore-db-cluster-to-point-in-time --restore-type copy-on-write \ 
-      --use-latest-restorable-time --source-db-cluster-identifier [clusterName] \ 
-      --db-cluster-identifier [clusterName]-clone --vpc-security-group-ids [dbSecurityGroup] \ 
-      --db-subnet-group-name [dbSubnetGroup] --backtrack-window 86400
+      aws rds restore-db-cluster-to-point-in-time --restore-type copy-on-write --use-latest-restorable-time --source-db-cluster-identifier [clusterName] --db-cluster-identifier [clusterName]-clone --vpc-security-group-ids [dbSecurityGroup] --db-subnet-group-name [dbSubnetGroup] --backtrack-window 86400
     ```
 
 The `–restore-type copy-on-write` is how the restore-db-cluster method is used to create a DB clone.
