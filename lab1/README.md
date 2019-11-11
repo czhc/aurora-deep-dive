@@ -51,15 +51,14 @@ The environment deployed using **CloudFormation** includes several components, a
 
 1. In the field named **Stack Name** , enter the value `dblabstack`, select the **ec2KeyPair** value as `dblabkeys` (the key pair you have created previously).
 
-Select all 3 AZs available in the drop down available for the **vpcAZs** field and then click **Next**.
-
+    Select all 3 AZs available in the drop down available for the **vpcAZs** field and then click **Next**.
 
     ![image7](./img/image007.png)
 
 1. On the **Configure stack options** page, leave the defaults as they are, scroll to the bottom and click **Next**.
 
 
-![image8](./img/image008.png)
+    ![image8](./img/image008.png)
 
 1. On the **Review dblabstack** page, scroll to the bottom, check the box that reads: **I acknowledge that AWS CloudFormation might create IAM resources with custom names** and then click **Create**.
 
@@ -88,10 +87,11 @@ Select all 3 AZs available in the drop down available for the **vpcAZs** field a
 
 **For macOS or Linux users:** You can connect using the following command from a terminal, however you will need to change the permissions of the certificate file first:
 
-    ```
-      chmod 600 /path/to/.pem
-      ssh -i /path/to/.pem ubuntu@[bastionEndpoint]
-    ```
+```
+  chmod 600 /path/to/.pem
+  ssh -i /path/to/.pem ubuntu@[bastionEndpoint]
+
+```
 
 
 ## Task 1.4 Set up the AWS CLI and seed the DB Cluster
