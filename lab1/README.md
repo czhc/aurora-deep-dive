@@ -2,11 +2,11 @@
 
 Please log into the AWS Management Console using the credentials provided to you on the separate card.
 
-You will be using the **Ohio (US-EAST-2)** region.
+You will be using the `Ohio (US-EAST-2)` region.
 
 In this part of the lab you will leverage AWS CloudFormation to provision an Aurora MySQL 5.6 compatible database cluster, along with a Linux EC2 instance to be used as a workstation. You will connect to the workstation using SSH.
 
-The environment deployed using CloudFormation includes several components, as listed below. Please download the CloudFormation template (instructions below) and review it for more details.
+The environment deployed using **CloudFormation** includes several components, as listed below. Please download the CloudFormation template (instructions below) and review it for more details.
 
 1. Amazon VPC network configuration with public and private subnets
 2. Database subnet group and relevant security groups for the cluster and workstation
@@ -39,13 +39,13 @@ The environment deployed using CloudFormation includes several components, as li
 
 ## Task 1.2 - Creating a Stack using CloudFormation
 
-1. Download the CloudFormation template named [lab\_template.yml](./lab_template.yml). Save it in a memorable location such as your desktop, you will need to reference it.
+1. Download the CloudFormation template named [lab\_template.yml](https://raw.githubusercontent.com/czhc/aurora-deep-dive--private/master/lab1/lab_template.yml?token=ABDLDPLM6425NFSEY4H2GYC5ZCV26). Save it in a memorable location such as your desktop, you will need to reference it.
 2. Open the **CloudFormation** service console and *Create Stack* 
 
 
 ![image5](./img/image005.png)
 
-1. Select the radio button named **Upload a template** , then **Choose file** and select the template file you downloaded previously named [lab\_template.yml](./lab_template.yml) and then click **Next**.
+1. Select the radio button named **Upload a template** , then **Choose file** and select the template file you downloaded previously named [lab_template.yml](./lab_template.yml) and then click **Next**.
 
 ![image6](./img/image006.png)
 
