@@ -25,3 +25,7 @@ In this part we will explore the cluster endpoints and how auto scaling of read 
     ![image15](./img/image015.png)
 
 1. You can now type `CTRL+C` on the bastion host to end the read load, if you wish to. After a while the additional readers will be removed automatically.
+
+## Extra
+
+Try out Aurora Custom Endpoints to split traffic between your aurora instances by load or use-cases.
